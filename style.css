@@ -1,7 +1,10 @@
 :root {
   --clr-primary-400: rgb(30, 48, 151);
   --clr-primary-500: rgb(19, 32, 107);
-  --clr-neutral-100: rgb(233, 233, 233);
+  --clr-neutral-100: rgb(255, 255, 255);
+  --clr-neutral-200: rgb(172, 172, 172);
+  --clr-neutral-400: rgb(170, 170, 170);
+  --clr-neutral-700: rgb(211, 211, 211);
 }
 
 * {
@@ -66,7 +69,8 @@ main {
 }
 
 .column--right {
-  background-color: blueviolet;
+  /*background-color: blueviolet;*/
+  padding-left: 3rem;
 }
 
 .progress-bar-label {
@@ -78,6 +82,7 @@ main {
   height: 1rem;
   width: 80%;
   margin-left: 1rem;
+  margin-bottom: 1rem;
   padding: 0;
 }
 
@@ -85,4 +90,71 @@ main {
   background-color: white;
   width: 50%;
   height: 100%;
+}
+
+table {
+  width: 85%;
+  text-align: left;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+table th {
+  padding-block: 0.6rem;
+  padding-left: 0.6rem;
+}
+
+td {
+  padding-block: 0.15rem;
+  padding-left: 0.6rem;
+  border: 2px solid var(--clr-neutral-200);
+}
+
+thead {
+  height: 3rem;
+  font-size: 1.7rem;
+}
+
+.table-section-header {
+  background-color: var(--clr-primary-400);
+  color: var(--clr-neutral-100);
+}
+
+.row--gray {
+  background-color: var(--clr-neutral-700);
+}
+
+.table-h2 {
+  color: var(--clr-primary-500);
+  background-color: var(--clr-neutral-400);
+  font-weight: bold;
+}
+
+ul {
+  padding-left: 0.5rem;
+  margin-right: 5rem;
+  line-height: 1.5rem;
+  margin-top: -0.7rem;
+  list-style-type: none;
+}
+
+li::before {
+  content: '>';
+  margin-right: 0.25rem;
+  font-weight: 900;
+}
+
+.single-cell td {
+  text-align: center;
+}
+
+hr {
+  color: white;
+  height: 3px;
+  background-color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
