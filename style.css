@@ -1,5 +1,5 @@
 :root {
-  /*--clr-primary-400: hsl(231, 67%, 35%);*/
+  /* color */
   --clr-primary-400: hsl(216, 100%, 20%);
   --clr-primary-500: hsl(216, 100%, 10%);
   --clr-neutral-100: rgb(255, 255, 255);
@@ -7,6 +7,15 @@
 
   --clr-table-h2-primary: hsl(216 80% 70%);
   --clr-tbl-primary-200: hsl(216 100% 92%);
+
+  /* b/w */
+  /*--clr-primary-400: hsl(216, 0%, 90%);
+  --clr-primary-500: hsl(216, 100%, 10%);
+  --clr-neutral-100: hsl(0, 0%, 0%);
+  --clr-neutral-200: hsl(0, 0%, 67%);
+
+  --clr-table-h2-primary: hsl(216 0% 95%);
+  --clr-tbl-primary-200: hsl(216 0% 95%);*/
 }
 
 * {
@@ -93,7 +102,7 @@ main {
 }
 
 .progress-bar {
-  background-color: white;
+  background-color: var(--clr-neutral-100);
   width: 50%;
   height: 100%;
 }
@@ -159,13 +168,13 @@ li::before {
 }
 
 hr {
-  color: white;
+  color: var(--clr-neutral-100);
   height: 3px;
-  background-color: white;
+  background-color: var(--clr-neutral-100);
 }
 
 a {
-  color: white;
+  color: var(--clr-neutral-100);
   text-decoration: none;
 }
 
